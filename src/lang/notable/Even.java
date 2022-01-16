@@ -1,10 +1,15 @@
+package lang.notable;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
+import lang.MathObject;
+import lang.Utils;
+import lang.numbersets.Integer;
 
 /**
- * ForAll x in Z Even(x) <-> 2|x
- * Even :: Z -> Boolean
+ * ForAll x in Z lang.notable.Even(x) <-> 2|x
+ * lang.notable.Even :: Z -> Boolean
  */
 public class Even extends PredicateDefinition {
 
@@ -33,13 +38,9 @@ public class Even extends PredicateDefinition {
 
   @Override
   protected String functionDefinitionLatex() {
-    return "\\forall x \\in \\mathbb{Z}\\ Even(x) := 2|x";
+    return "\\forall x \\in \\mathbb{Z}\\ lang.notable.Even(x) := 2|x";
   }
 
-  @Override
-  public String toLatex(String latexLabel) {
-    return null; // implement later and reuse functionality from old latex func
-  }
 
   @Override
   protected List<MathObject> inputs() {

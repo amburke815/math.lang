@@ -1,12 +1,16 @@
+package lang.notable;
+
 import java.util.List;
 import java.util.function.Predicate;
+import lang.MathObject;
+import lang.notable.INotable;
 
 /**
  * For noting a boolean quality of a mathematical object.
  *
- * i.e. ForAll x in Z: Even(x) <-> 2|x is a PredicateDefinition
- * Even :: Z -> Boolean
- * ForAll x in Z Even(x) := 2|x
+ * i.e. ForAll x in Z: lang.notable.Even(x) <-> 2|x is a lang.notable.PredicateDefinition
+ * lang.notable.Even :: Z -> Boolean
+ * ForAll x in Z lang.notable.Even(x) := 2|x
  */
 public abstract class PredicateDefinition implements INotable {
 
